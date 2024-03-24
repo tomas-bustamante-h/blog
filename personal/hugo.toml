@@ -1,0 +1,6 @@
+baseURL = 'https://tomas-bustamante-h.github.io/'
+languageCode = 'en-us'
+title = 'Tomás Bustamante'
+theme = "PaperMod"
+
+
