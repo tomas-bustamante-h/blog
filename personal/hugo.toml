@@ -1,6 +1,170 @@
-baseURL = 'https://tomas-bustamante-h.github.io/'
-languageCode = 'en-us'
-title = 'Tomás Bustamante'
-theme = "PaperMod"
+baseURL = "https://tomas-bustamante-h.github.io/"
+languageCode = "en-us"
+title = "Tomás Bustamante"
+theme = ["hugo-embed-pdf-shortcode", "PaperMod"]
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+googleAnalytics = "UA-123-45"
+pygmentsUseClasses = true
+enableInlineShortcodes = true
+
+
+DefaultContentLanguage = "en"
+
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "Tomás Bustamante Hernández"
+description = "ExampleSite description"
+keywords = [ "Blog", "Portfolio", "PaperMod" ]
+author = "Me"
+images = [ "<link or path of image for opengraph, twitter-cards>" ]
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+  [params.assets]
+  favicon = "/icon.png"
+  favicon16x16 = "<link / abs url>"
+  favicon32x32 = "<link / abs url>"
+  apple_touch_icon = "<link / abs url>"
+  safari_pinned_tab = "<link / abs url>"
+
+  [params.label]
+  text = ""
+  icon = "/icon.png"
+  iconHeight = 25
+
+  [params.profileMode]
+  enabled = true
+  title = "Tomás Bustamante Hernández"
+  subtitle = "Economista"
+  #imageUrl = "<img location>"
+  #imageWidth = 120
+  #imageHeight = 120
+  #imageTitle = "my image"
+
+    [[params.profileMode.buttons]]
+    name = "Posts"
+    url = "posts"
+    
+    [[params.profileMode.buttons]]
+    name = "Buscar"
+    url = "search"
+
+    #[[params.profileMode.buttons]]
+    #name = "Tags"
+    #url = "tags"
+
+  [params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = "Welcome to my blog"
+
+  #[[params.socialIcons]]
+  #name = "x"
+  #url = "https://x.com/"
+
+  #[[params.socialIcons]]
+  #name = "stackoverflow"
+  #url = "https://stackoverflow.com"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/tomas-bustamante-h"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/tomas-bustamante-hernandez/"
+	
+  [[params.socialIcons]]
+  name = "cv"
+  url = "https://tomas-bustamante-h.github.io/resume_cv.pdf"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:tomas.bustamante.hernandez@gmail.com"
+
+[params.analytics.google]
+SiteVerificationTag = "XYZabc"
+
+[params.analytics.bing]
+SiteVerificationTag = "XYZabc"
+
+[params.analytics.yandex]
+SiteVerificationTag = "XYZabc"
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  [params.editPost]
+  URL = "https://github.com/<path_to_repo>/content"
+  Text = "Suggest Changes"
+  appendFilePath = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  limit = 10
+  keys = [ "title", "permalink", "summary", "content" ]
+
+#[[menu.main]]
+#identifier = "about"
+#name = "Sobre mí"
+#url = "/about/"
+#weight = 10
+
+#[[menu.main]]
+#identifier = "Categories"
+#name = "Categorias"
+#url = "/categories/"
+#weight = 10
+
+[[menu.main]]
+identifier = "cv"
+name = "Curriculum Vitae"
+url = "/cv/"
+weight = 10
+
+[[menu.main]]
+identifier = "Search"
+name = "Buscar"
+url = "/search/"
+weight = 10
+
+
+
+[markup.highlight]
+noClasses = false
 
 
