@@ -25,9 +25,9 @@ minifyOutput = true
 [params]
 env = "production"
 title = "Tomás Bustamante Hernández"
-description = "ExampleSite description"
+description = "Economista, estudiante de Mg. en Ciencia de Datos."
 keywords = [ "Blog", "Portfolio", "PaperMod" ]
-author = "Me"
+author = "Tomás"
 images = [ "<link or path of image for opengraph, twitter-cards>" ]
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
